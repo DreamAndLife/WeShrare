@@ -34,7 +34,7 @@ public class AdminController {
 
 		if(!admin.getPassword().equals(MD5.getMD5(password))){
 			return "admin/login"; // 验证失败，跳转登录页面
-		}else{	// 验证成功
+		}else{	// 验证 成功
 			session.setAttribute("userSession", "caption"); // 保存 session
 			return "admin/noteList";	 // 跳转到主界面
 		}
