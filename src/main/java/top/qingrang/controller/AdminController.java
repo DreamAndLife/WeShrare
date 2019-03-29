@@ -36,7 +36,7 @@ public class AdminController {
 			return "admin/login"; // 验证失败，跳转登录页面
 		}else{	// 验证成功
 			session.setAttribute("userSession", "caption"); // 保存 session
-			return "admin/noteList";	// 跳转到主界面
+			return "admin/noteList";	 // 跳转到主界面
 		}
 	}
 
